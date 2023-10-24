@@ -1,0 +1,36 @@
+body {
+    background-color: #FFDDFF;
+   
+   
+}.botao {
+       display: block;
+       width: 160px;
+       height: 40px;
+       line-height: 40px;
+       padding: 10px 5px;
+       margin: 20px;
+       background-color: #B67AE0;
+       color: white;
+       border-radius: 5px;
+       text-decoration: none;
+       text-align: center;
+       font-weight: bold;
+       font-family: Arial;
+
+} .cabecalho {
+   text-align: center;
+   
+} .Cadastrar {
+   background-color: #B67AE0;
+   font-size: x-large;
+   
+} .Login {
+   background-color: #B67AE0;
+   font-size: x-large;
+   
+} label {
+   font-size: x-large;
+   
+} h1 {
+   font-size: small;
+   } 
