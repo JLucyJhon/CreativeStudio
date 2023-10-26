@@ -18,17 +18,15 @@ body{
     background-color: #ffddff;
 }
 
-.img2{
-    margin-left: 880px;
+ .img2{
+   
 }
 
 .img1{
-    margin-left: 80px;
-}
+   
+} 
 
-.imgs{
-    padding-top: 100px;
-}
+
 
 .legend{
     font-size: 22px;
@@ -52,11 +50,14 @@ h1{
 
 .form_login{
     border-radius: 50px;
-    margin-left: 500px;
-    margin-right: 500px;
+    /*margin-left: 500px;
+    margin-right: 500px;*/
     border: 10px solid #8C69BC;
 }
 
 .formulario{
     margin-left: 10px;
 }
+.conteudo{
+    display: flex;
+    }
