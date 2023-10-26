@@ -4,29 +4,60 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: fonte1;
+    src: url('fontes/Garet-Book.otf');
+}
+
+@font-face {
+    font-family: fonte2;
+    src: url('fontes/CaviarDreams.ttf');
+}
+
 body{
     background-color: #ffddff;
+}
+
+.img2{
+    margin-left: 880px;
+}
+
+.img1{
+    margin-left: 80px;
+}
+
+.imgs{
+    padding-top: 100px;
+}
+
+body{
+    background-color: #ffddff;
+}
+
+.radio{
+    font-family: fonte1;
 }
 
 h1{
     font-size: 70px;
     text-align: center;
+    font-family: fonte1;
 }
 
-fieldset{
+.form{
     border-radius: 50px;
-    margin-left: 500px;
-    margin-right: 500px;
+    margin-left: 400px;
+    margin-right: 400px;
     border: 10px solid #8C69BC;
-    border-style: double;  
 }
 
 .formulario{
-    margin-left: 75px;
+    margin-left: 10px;
 }
 
-legend{
+.legend{
     font-size: 22px;
+    font-family: fonte1;
 }
 
 label{
@@ -44,4 +75,16 @@ label{
 
 #igenero{
     background-color: #8C69BC;
+<<<<<<< HEAD
+}
+
+#linha{
+    display: inline;
+}
+
+.form_login{
+    border-radius: 50px;
+    margin-left: 500px;
+    margin-right: 500px;
+    border: 10px solid #8C69BC;
 }

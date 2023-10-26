@@ -1,13 +1,62 @@
-body {
-    background-color: #FFDDFF;
-   
-   
-   } .cabecalho {
-   text-align: center;
-   
-   } label {
-   font-size: x-large;
-   
-   } h1 {
-   font-size: small;
-   } 
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: fonte1;
+    src: url('fontes/Garet-Book.otf');
+}
+
+@font-face {
+    font-family: fonte2;
+    src: url('fontes/CaviarDreams.ttf');
+}
+
+body{
+    background-color: #ffddff;
+}
+
+.img2{
+    margin-left: 880px;
+}
+
+.img1{
+    margin-left: 80px;
+}
+
+.imgs{
+    padding-top: 100px;
+}
+
+.legend{
+    font-size: 22px;
+    font-family: fonte1;
+}
+
+.caixa-resposta{
+    border-radius: 50px;
+    border: none;
+    font-size: 15px;
+    background-color: #a97fb7;
+    width: 350px;
+    height: 35px;
+}
+
+h1{
+    font-size: 70px;
+    text-align: center;
+    font-family: fonte1;
+}
+
+.form_login{
+    border-radius: 50px;
+    margin-left: 500px;
+    margin-right: 500px;
+    border: 10px solid #8C69BC;
+}
+
+.formulario{
+    margin-left: 10px;
+}
