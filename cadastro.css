@@ -93,4 +93,19 @@ label{
     margin-left: 500px;
     margin-right: 500px;
     border: 10px solid #8C69BC;
+} .botao {
+    display: block;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    padding: 10px 5px;
+    margin: 20px;
+    background-color: #B67AE0;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial;
+
 }
