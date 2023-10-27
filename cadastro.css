@@ -4,29 +4,63 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: fonte1;
+    src: url('fontes/Garet-Book.otf');
+}
+
+@font-face {
+    font-family: fonte2;
+    src: url('fontes/CaviarDreams.ttf');
+}
+
+@font-face {
+    font-family: fonte3;
+    src: url('fontes/Mercy\ Christole.ttf');
+}
+
 body{
     background-color: #ffddff;
 }
 
-h1{
-    font-size: 70px;
-    text-align: center;
+.img2{
+    height: 700px;
+    padding-top: 10%;
 }
 
-fieldset{
+.img1{
+    height: 700px;
+    padding-top: 10%;
+}
+
+
+body{
+    background-color: #ffddff;
+}
+
+.radio{
+    font-family: fonte1;
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    font-family: fonte3;
+}
+
+.form{
     border-radius: 50px;
-    margin-left: 500px;
-    margin-right: 500px;
+    
     border: 10px solid #8C69BC;
-    border-style: double;  
 }
 
 .formulario{
-    margin-left: 75px;
+    margin-left: 10px;
 }
 
-legend{
+.legend{
     font-size: 22px;
+    font-family: fonte1;
 }
 
 label{
@@ -41,7 +75,22 @@ label{
     width: 350px;
     height: 35px;
 }
+.conteudo{
+    display: flex;
+}
 
 #igenero{
     background-color: #8C69BC;
+<<<<<<< HEAD
+}
+
+#linha{
+    display: inline;
+}
+
+.form_login{
+    border-radius: 50px;
+    margin-left: 500px;
+    margin-right: 500px;
+    border: 10px solid #8C69BC;
 }
