@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Página de Login</title>
     <link rel="stylesheet" href="CS (Login).css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
 </head>
-<body>
-    <header class="cabecalho">
-        <li><a href="CS (Página Inicial).html">Home </a></li>
-        <label>CS</label>
-        <li><a href="#">Search </a></li>
 
-    </header>
-    <div class="box">
-        <form action="" method="get">
-        <img class="imgA3" src="CS(imagens)/pagina_inicial__5_-removebg-preview.png">
-            <h1>Login</h1>
-            <fieldset>
-                <h1 for="iEmail">Email:</h1>
-                <input type="email" name="Email" id="iEmail">
-                <br><br>
-                <h1 for="iSenha">Senha:</h1>
-                <input type="password" name="Senha" id="iSenha">
-                <br><br>
-                </fieldset>
-                <img class="imgB3" src="CS(imagens)/pagina_inicial__4_-removebg-preview.png">
-       
-    </form>
-</div>
+<body>
+    <main class="conteudo">
+        <img class="img1" src="CS(imagens)/pg-cadastro_login  1.png" alt="">
+        <form action="CS (Login).html" method="get">
+            <h1>LOGIN</h1>
+            <fieldset class="form_login">
+                <div class="formulario">
+                    <br><br>
+                    <label class="legend" for="iEmail">Email:</label>
+                    <br><br>
+                    <input class="caixa-resposta" type="email" name="Email" id="iEmail" placeholder="Digite seu Email">
+                    <br><br><br><br><br>
+                    <label class="legend" for="iSenha">Senha:</label>
+                    <br><br>
+                    <input class="caixa-resposta" type="password" name="Senha" id="iSenha"
+                        placeholder="Digite sua Senha">
+                    <br><br><br><br><br>
+                    <a class="botao" href="CS (Página Inicial).html">Logar</a>
+            </fieldset>
+        </form>
+        <img class="img2" src="CS(imagens)/pg-cadastro_login 2.png" alt="">
+    </main>
+    <br><br>
+   <!--  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script> -->
 </body>
 </html>
