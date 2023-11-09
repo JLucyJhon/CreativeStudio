@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
@@ -19,48 +19,48 @@
     src: url('fontes/Ramisland.otf');
 }
 
-body{
+body {
     background-color: #ffddff;
 }
 
-.img2{
+.img2 {
     height: 700px;
     padding-top: 10%;
 }
 
-.img1{
+.img1 {
     height: 700px;
     padding-top: 10%;
 }
 
 
-body{
+body {
     background-color: #ffddff;
 }
 
-.radio{
+.radio {
     font-family: fonte1;
 }
 
-h1{
+h1 {
     font-size: 70px;
     text-align: center;
     font-family: fonte3;
 }
 
-.formulario{
-margin-right: 50px;
+.formulario {
+    margin-right: 50px;
 }
 
-.legend{
+.legend {
     font-size: 27px;
 }
 
-label{
+label {
     font-size: 20px;
 }
 
-.caixa-resposta{
+.caixa-resposta {
     border-radius: 10px;
     border: none;
     font-size: 15px;
@@ -68,20 +68,21 @@ label{
     width: 350px;
     height: 35px;
 }
-.conteudo{
+
+.conteudo {
     display: flex;
 }
 
-#igenero{
+#igenero {
     background-color: #8C69BC;
-<<<<<<< HEAD
+
 }
 
-#linha{
+#linha {
     display: inline;
 }
 
-.form_login{
+.form_login {
     border-radius: 50px;
     margin-left: 500px;
     margin-right: 500px;
@@ -90,7 +91,7 @@ label{
 }
 
 
-button{
+/* button{
     font-family: geosans;
     font-size: 200%;
     text-align: center;
@@ -102,31 +103,45 @@ button{
     width: 150px;
     border: none;
     margin-top: 70px;
+} */
+.buttonCadastro {
+    font-family: geosans;
+    font-size: 200%;
+    background-color: #8C69BC;
+    color: #ffddff;
+    border-radius: 10px;
+    height: 50px;
+    width: 150px;
+    border: none;
+    margin-top: 70px;
+    margin-left: 50%;
 }
 
 
-button:hover{
+button:hover {
     background-color: #8c69bc99;
     color: black;
 }
 
-.sla1{
+.sla1 {
     width: 500px;
     height: 450px;
 }
 
-.sla2{
+.sla2 {
     width: 500px;
-    height:500px;
+    height: 500px;
     margin-left: 70px;
 }
-div{
+
+div {
     display: inline-block;
 }
-.bloco{
+
+.bloco {
     margin-left: 300px;
 }
 
-h2{
+h2 {
     text-align: center;
 }
