@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
@@ -16,96 +16,132 @@
 
 @font-face {
     font-family: fonte3;
-    src: url('fontes/Mercy\ Christole.ttf');
+    src: url('fontes/Ramisland.otf');
 }
 
-body{
+body {
     background-color: #ffddff;
 }
 
-.img2{
+.img2 {
     height: 700px;
     padding-top: 10%;
 }
 
-.img1{
+.img1 {
     height: 700px;
     padding-top: 10%;
 }
 
 
-body{
+body {
     background-color: #ffddff;
 }
 
-.radio{
+.radio {
     font-family: fonte1;
 }
 
-h1{
-    font-size: 50px;
+h1 {
+    font-size: 70px;
     text-align: center;
     font-family: fonte3;
 }
 
-.form{
-    border-radius: 50px;
-    
-    border: 10px solid #8C69BC;
+.formulario {
+    margin-right: 50px;
 }
 
-.formulario{
-    margin-left: 10px;
+.legend {
+    font-size: 27px;
 }
 
-.legend{
-    font-size: 22px;
-    font-family: fonte1;
+label {
+    font-size: 20px;
 }
 
-label{
-    font-size: 18px;
-}
-
-.caixa-resposta{
-    border-radius: 50px;
+.caixa-resposta {
+    border-radius: 10px;
     border: none;
     font-size: 15px;
-    background-color: #a97fb7;
+    background-color: #26106986;
     width: 350px;
     height: 35px;
 }
-.conteudo{
+
+.conteudo {
     display: flex;
 }
 
-#igenero{
+#igenero {
     background-color: #8C69BC;
-<<<<<<< HEAD
+
 }
 
-#linha{
+#linha {
     display: inline;
 }
 
-.form_login{
+.form_login {
     border-radius: 50px;
     margin-left: 500px;
     margin-right: 500px;
     border: 10px solid #8C69BC;
-} .botao {
-    display: block;
-    width: 160px;
-    height: 40px;
-    line-height: 40px;
-    padding: 10px 5px;
-    margin: 20px;
-    background-color: #B67AE0;
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
-    text-align: center;
-    font-weight: bold;
-    font-family: Arial;
 
+}
+
+
+/* button{
+    font-family: geosans;
+    font-size: 200%;
+    text-align: center;
+    display: flex;
+    background-color: #8C69BC;
+    color: #ffddff;
+    border-radius: 10px;
+    height: 50px;
+    width: 150px;
+    border: none;
+    margin-top: 70px;
+} */
+.buttonCadastro {
+    font-family: geosans;
+    font-size: 200%;
+    background-color: #8C69BC;
+    color: #ffddff;
+    border-radius: 10px;
+    height: 50px;
+    width: 150px;
+    border: none;
+    margin-top: 70px;
+    margin-left: 50%;
+}
+
+
+button:hover {
+    background-color: #8c69bc99;
+    color: black;
+}
+
+.sla1 {
+    width: 500px;
+    height: 450px;
+}
+
+.sla2 {
+    width: 500px;
+    height: 500px;
+    margin-left: 70px;
+}
+
+div {
+    display: inline-block;
+}
+
+.bloco {
+    margin-left: 300px;
+}
+
+h2 {
+    text-align: center;
 }
