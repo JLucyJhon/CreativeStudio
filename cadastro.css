@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: fonte3;
-    src: url('fontes/Mercy\ Christole.ttf');
+    src: url('fontes/Ramisland.otf');
 }
 
 body{
@@ -43,35 +43,28 @@ body{
 }
 
 h1{
-    font-size: 50px;
+    font-size: 70px;
     text-align: center;
     font-family: fonte3;
 }
 
-.form{
-    border-radius: 50px;
-    
-    border: 10px solid #8C69BC;
-}
-
 .formulario{
-    margin-left: 10px;
+margin-right: 50px;
 }
 
 .legend{
-    font-size: 22px;
-    font-family: fonte1;
+    font-size: 27px;
 }
 
 label{
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .caixa-resposta{
-    border-radius: 50px;
+    border-radius: 10px;
     border: none;
     font-size: 15px;
-    background-color: #a97fb7;
+    background-color: #26106986;
     width: 350px;
     height: 35px;
 }
@@ -93,19 +86,47 @@ label{
     margin-left: 500px;
     margin-right: 500px;
     border: 10px solid #8C69BC;
-} .botao {
-    display: block;
-    width: 160px;
-    height: 40px;
-    line-height: 40px;
-    padding: 10px 5px;
-    margin: 20px;
-    background-color: #B67AE0;
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
-    text-align: center;
-    font-weight: bold;
-    font-family: Arial;
 
+}
+
+
+button{
+    font-family: geosans;
+    font-size: 200%;
+    text-align: center;
+    display: flex;
+    background-color: #8C69BC;
+    color: #ffddff;
+    border-radius: 10px;
+    height: 50px;
+    width: 150px;
+    border: none;
+    margin-top: 70px;
+}
+
+
+button:hover{
+    background-color: #8c69bc99;
+    color: black;
+}
+
+.sla1{
+    width: 500px;
+    height: 450px;
+}
+
+.sla2{
+    width: 500px;
+    height:500px;
+    margin-left: 70px;
+}
+div{
+    display: inline-block;
+}
+.bloco{
+    margin-left: 300px;
+}
+
+h2{
+    text-align: center;
 }
