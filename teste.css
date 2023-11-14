@@ -1,0 +1,21 @@
+body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+   }
+   
+   .mensagem {
+    color: #00ff00;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    animation: mensagem 5s linear infinite;
+   }
+   
+   @keyframes mensagem {
+     0% { opacity: 0; transform: scale(0); }
+     50% { opacity: 1; transform: scale(1.2); }
+     100% { opacity: 0; transform: scale(0); }
+   }

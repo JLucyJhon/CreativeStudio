@@ -14,45 +14,49 @@
     src: url('fontes/CaviarDreams.ttf');
 }
 
+@font-face {
+    font-family: fonte3;
+    src: url('fontes/Ramisland.otf');
+}
+
+label{
+    font-size: 20px;
+}
+
 body{
     background-color: #ffddff;
 }
 
- .img2{
-   
+.img1{
+    height: 700px;
+    padding-top: 10%;
 }
 
-.img1{
-   
-} 
-
-
-
 .legend{
-    font-size: 22px;
-    font-family: fonte1;
+    font-size: 27px;
 }
 
 .caixa-resposta{
-    border-radius: 50px;
+    border-radius: 10px;
     border: none;
     font-size: 15px;
-    background-color: #a97fb7;
+    background-color: #26106986;
     width: 350px;
     height: 35px;
 }
 
 h1{
-    font-size: 70px;
+    font-size: 75px;
     text-align: center;
-    font-family: fonte1;
+    font-family: fonte3;
+    padding-top: 80px;
 }
 
 .form_login{
     border-radius: 50px;
     /*margin-left: 500px;
     margin-right: 500px;*/
-    border: 10px solid #8C69BC;
+    border: 10px solid #ffddff;
 }
 
 .formulario{
@@ -60,20 +64,21 @@ h1{
 }
 .conteudo{
     display: flex;
-    } 
-    .botao {
-        display: block;
-        width: 160px;
-        height: 40px;
-        line-height: 40px;
-        padding: 10px 5px;
-        margin: 20px;
-        background-color: #B67AE0;
-        color: white;
-        border-radius: 5px;
-        text-decoration: none;
-        text-align: center;
-        font-weight: bold;
-        font-family: Arial;
-    
-    }
+} 
+.botao1{
+    text-align: center;
+    font-size: 25px;
+    background-color: #8C69BC;
+    height: 50px;
+    width: 130px;
+    position: absolute;
+    border-radius: 10px;
+    border: none;
+    margin-left: 100px;
+    color: #ffddff;
+}
+
+.botao1:hover{
+    background-color: #8c69bc99;
+    color: black;
+}
