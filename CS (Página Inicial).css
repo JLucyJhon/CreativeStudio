@@ -39,25 +39,12 @@ body {
      text-decoration: none;
  }
  
- .submenuProdutos {
-     position: absolute;
-     display: none;
-     background-color: #8C69BC;
- 
- }
- 
  .submenuCategorias {
      position: absolute;
      display: none;
      background-color: #8C69BC;
  
- }
- 
- .submenuServicos {
-     position: absolute;
-     display: none;
-     background-color: #8C69BC;
- 
+
  }
  
  .submenuContatos {
@@ -67,37 +54,18 @@ body {
  
  }
  
- .submenuProdutos a {
-     display: block;
- 
- }
  
  .submenuCategorias a {
      display: block;
  
  }
- 
- .submenuServicos a {
-     display: block;
- 
- }
- 
+
  .submenuContatos a {
      display: block;
  
  }
  
- 
- .menuProdutos:hover .submenuProdutos {
-     display: block;
- 
- }
- 
  .menuCategorias:hover .submenuCategorias {
-     display: block;
- 
- }
- .menuServicos:hover .submenuServicos {
      display: block;
  
  }
