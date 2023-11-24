@@ -90,18 +90,32 @@ label{
 }
 
 
-button{
-    font-family: geosans;
-    font-size: 200%;
+.botaoAT{
     text-align: center;
-    display: flex;
-    background-color: #8C69BC;
-    color: #ffddff;
-    border-radius: 10px;
+    font-size: 25px;
+    background-color: #26106986;
     height: 50px;
-    width: 150px;
+    width: 130px;
+    position: absolute;
+    border-radius: 10px;
     border: none;
-    margin-top: 70px;
+    margin-left: 50%;
+    color: #ffddff;
+    margin-top: 50px;
+}
+
+.botaoAR{
+    text-align: center;
+    font-size: 25px;
+    background-color: #26106986;
+    height: 50px;
+    width: 130px;
+    position: absolute;
+    border-radius: 10px;
+    border: none;
+    margin-left: 100px;
+    color: #ffddff;
+    margin-top: 50px;
 }
 
 

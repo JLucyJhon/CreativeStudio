@@ -4,32 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Página de Cadastro da Arte</title>
     <link rel="stylesheet" href="cadastro.css">
-    <script>
-
-    </script>
-    <style>
-
-    </style>
 </head>
 
 <body>
+<main class="conteudo">
+    <img class="img1" src="CS(imagens)/img.pg.CA3.png"alt="">
 
     <form action="cadastro.html" method="get">
-        <h1>Cadastro das Artes</h1>
+    <br><br>
+    <h1>Cadastro da Arte</h1>
 
-        <div class="formulario">
-            <br>
-            <label class="legend" for="inome">Nome da arte:</label>
-            <input class="caixa-resposta" type="text" name="nome" id="inome" required>
-            <br><br>
+    <div class="formulario">
+        <br>
+        <label class="legend" for="inome">Nome da arte:</label>
+        <br>
+        <input class="caixa-resposta" type="text" name="nome" id="inome" required>
+        <br><br>
 
-            <label class="legend" for="isobrenome">Informações da arte:</label>
-            <input class="caixa-resposta" type="text" name="sobrenome" id="isobrenome" required>
-            <br><br>
+        <label class="legend" for="isobrenome">Informações sobre a arte:</label>
+        <br>
+        <input class="caixa-resposta" type="text" name="sobrenome" id="isobrenome" required>
+        <br><br>
 
-            <label for="">Quantidade de Artes</label>
+        <label class="legend" for="">Quantidade de Artes</label>
             <select name="" id="">
                 <option value="">1</option>
                 <option value="">2</option>
@@ -43,7 +42,6 @@
                 <option value="">10</option>
             </select>
             <br><br>
-
             <legend class="legend">Tipo de Arte:</legend>
             <br>
             <input type="checkbox" name="fotografia" id="ifotografia">
@@ -59,14 +57,12 @@
             <label class="radio" for="idesenho">Desenho</label>
             <br>
             <label class="radio" for="ioutro2">Outro:</label>
+            <br>
             <input class="caixa-resposta" type="text" name="arte.outro" id="ioutro2">
-            <br><br>
-
-            <button class="glow-on-hover" type="button">Cadastrar</button>
-        </div>
-
-    </form>
-
+</div>
+        <br>
+        <button class="botaoAR">Cadastrar</button>
+        </form>
+    <br><br><br>
 </body>
-
 </html>
