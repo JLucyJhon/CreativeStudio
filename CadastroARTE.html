@@ -1,43 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CADASTRO</title>
-    <link rel="stylesheet" href="CadastroARte.css">
+    <title>Página de Cadastro da Arte</title>
+    <link rel="stylesheet" href="cadastro.css">
 </head>
 
 <body>
-    <div class="container">
-    <Fieldset>Cadastro das Artes
-        <fieldset>
-                <div class="formulario">
-            <label for="Nome" id="inome">Nome:</label>
-            <input type="text">
+<main class="conteudo">
+    <img class="img1" src="CS(imagens)/img.pg.CA3.png"alt="">
+
+    <form action="cadastro.html" method="get">
+    <br><br>
+    <h1>Cadastro da Arte</h1>
+
+    <div class="formulario">
+        <br>
+        <label class="legend" for="inome">Nome da arte:</label>
+        <br>
+        <input class="caixa-resposta" type="text" name="nome" id="inome" required>
+        <br><br>
+
+        <label class="legend" for="isobrenome">Informações sobre a arte:</label>
+        <br>
+        <input class="caixa-resposta" type="text" name="sobrenome" id="isobrenome" required>
+        <br><br>
+
+        <label class="legend" for="">Quantidade de Artes</label>
+            <select name="" id="">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+            </select>
             <br><br>
-            <label for="Info" id="Info">Digite informações sobre a sua arte:</label>
-            <input type="text">
-            <br><br>
-            <label class="radio" id="iquant">quantas artes serão cadastradas:</label>
-            <li class="menuquantidade"><a href="#">1</a>
-            <li class="menuquantidade"><a href="#">2</a>
-            <li class="menuquantidade"><a href="#">3</a>
-            <li class="menuquantidade"><a href="#">4</a>
-            <li class="menuquantidade"><a href="#">5</a>
-            <li class="menuquantidade"><a href="#">6</a>
-            <li class="menuquantidade"><a href="#">7</a>
-            <li class="menuquantidade"><a href="#">8</a>
-            <li class="menuquantidade"><a href="#">9</a>
-            <li class="menuquantidade"><a href="#">10</a>
-            </li>
-            <input type="button" value="Cadastrar">
+            <legend class="legend">Tipo de Arte:</legend>
             <br>
-            
-            </div>
-            </div>
-
-
+            <input type="checkbox" name="fotografia" id="ifotografia">
+            <label class="radio" for="ifotografia">Fotografia</label>
+            <br>
+            <input type="checkbox" name="musica" id="imusica">
+            <label class="radio" for="imusica">Musica</label>
+            <br>
+            <input type="checkbox" name="dança" id="idança">
+            <label class="radio" for="idança">Dança</label>
+            <br>
+            <input type="checkbox" name="desenho" id="idesenho">
+            <label class="radio" for="idesenho">Desenho</label>
+            <br>
+            <label class="radio" for="ioutro2">Outro:</label>
+            <br>
+            <input class="caixa-resposta" type="text" name="arte.outro" id="ioutro2">
+</div>
+        <br>
+        <button class="botaoAR">Cadastrar</button>
+        </form>
+    <br><br><br>
 </body>
-
 </html>
