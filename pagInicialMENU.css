@@ -1,0 +1,141 @@
+@font-face{ 
+   font-family: Adorage;
+    src: local(Adorage), url("fontes/DMSerifDisplay-Regular.ttf");
+ }
+ @font-face{
+    src: local(Sla), url("fontes/Calistoga-Regular.ttf");
+    font-family: Sla;
+ }
+body {
+    
+    background-color: #FFDDFF;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    background-color: none;
+    padding: 10px;
+  }
+  
+  .title {
+    margin-right: auto; /* Empurra o título para a esquerda */
+    font-weight: bold;
+    font-size: 35px;
+    font-family: Adorage;
+    margin-left: 40px;
+  }
+ 
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 30px;
+  }
+  
+  nav ul li {
+    margin-right: 10px;
+    position: relative;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    padding: 8px 15px;
+    border: 1px none #ccc;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    color: #333;
+  }
+  
+  nav ul li a:hover {
+    background-color: #B67AE0;
+  }
+  .img1{
+    display: block;
+    float: right;
+    height: 500px;
+    padding-left: 20%;
+    padding-top: 2%;
+    margin-right: 150px;
+    
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #d0a5f0;
+    box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 0;
+    border-radius: 20px;
+    margin-top: 5px;
+  }
+ 
+  .links {
+    display: flex;
+}
+
+.links a {
+    margin-right: 5px; /* Espaço entre os links (opcional) */
+    text-decoration: none;
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    transition: background-color 0.3s ease;
+    color: #333;
+    margin-left: 60px;
+    margin-bottom: 40px;
+    font-family: Arial;
+    width: 160px;
+    line-height: 40px;
+    text-align: center;
+    padding: 10px 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.links a:hover{
+    background-color: #B67AE0;
+}
+
+  h1{
+    margin-top: 130px;
+    padding-left: 60px;
+    font-family: Sla;
+    font-size: 24px;
+    
+  }
+  h2{
+    font-size: 20px;
+    text-align:justify;
+    width: 500px;
+    padding-left: 60px;
+    
+   
+ 
+  }
+  
+  .dropdown-content li {
+    display: block;
+    border-bottom: 1px none #ccc;
+    margin-left: 20px;
+  }
+  
+  .dropdown-content li:last-child {
+    border-bottom: none;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #B67AE0;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  

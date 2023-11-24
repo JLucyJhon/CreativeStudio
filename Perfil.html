@@ -6,34 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Perfil.css">
-</head>
+ 
 
+
+<script>
+   function displayImage(input) {
+      if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function(e) {
+          var imgElement = document.getElementById("uploaded-image");
+          imgElement.src = e.target.result;
+        };
+
+        reader.readAsDataURL(input.files[0]);
+      }
+    }
+    
+</script>
+</head>
 <body>
-    <br><br>
-    <div class="interface">
-        <img class="img1" src="" alt="">
-        <br><br>
-        <h2>@CROCANTE</h2>
-        <br>
-        <h2>para mais informações sobre minhas vendas</h2>
-        <br>
-        <button class="vendas">vendas</button>
+    <div class="PERFILCABECARIO">
+        <div class="user-profile">
+            <div class="image-upload-container">
+              <img id="uploaded-image" src="" alt="Imagem" />
+              <label for="image-input" style="display: block; text-align: center; margin-top: 10px;">
+                Selecione uma imagem
+               </label>
+            </div>
+       
+        <div class="mini-bio">
+            <h2>@Robii</h2>
+            <p>Oioi eu gosto de morango e de desenhar:D
+                <br>
+            Tenho 19 anos, sou um pacote de bolacha negrito aro?ace
+            <br> eu gosto de Conan Gray e sofrer por livro
+            </p>
+            <button>INFO</button>
+        </div>
+      </div>
+      <input type="file" id="image-input" accept="image/*" onchange="displayImage(this)" />
+      <img id="grade" src="grid.png" alt="">
+      <hr>
+
+      <div class="wrapper">
+        <div>  <img src="🎀.jpg" alt=""> </div>
+        <div>  <img src="download (1).jpg" alt=""></div>
+        <div>  <img src="download.jpg" alt="">  </div>
+        <div> <img src="♡.jpg" alt=""></div>
+
+      </div>
+      
     </div>
-    <br><br>
-    <div class="interface">
-        <img class="" src="" alt="">
-    </div>
-    <div class="gallery">
-        <figure class="gallery__item gallery__item--1">
-            <img src="" class="gallery__img" alt="image 1">
-        </figure>
-        <figure class="gallery__item gallery__item--2">
-            <img src="" class="gallery__img" alt="image 2">
-        </figure>
-        <figure class="gallery__item gallery__item--3">
-            <img src="" class="gallery__img" alt="image 3">
-        </figure>
-    </div>
+  
+
 </body>
 
 </html>
