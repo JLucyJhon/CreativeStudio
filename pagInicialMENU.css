@@ -6,6 +6,22 @@
     src: local(Sla), url("fontes/Calistoga-Regular.ttf");
     font-family: Sla;
  }
+
+ @font-face {
+  font-family: fonte3;
+  src: url('fontes/Ramisland.otf');
+}
+
+@font-face {
+  font-family: fonte2;
+  src: url('fontes/Classyvogueregular.ttf');
+}
+
+@font-face {
+  font-family: fonte4;
+  src: url('fontes/CinzelDecorative-Regular.ttf');
+}
+
 body {
     
     background-color: #FFDDFF;
@@ -22,7 +38,7 @@ body {
     margin-right: auto; /* Empurra o título para a esquerda */
     font-weight: bold;
     font-size: 35px;
-    font-family: Adorage;
+    font-family: fonte4;
     margin-left: 40px;
   }
  
@@ -46,11 +62,12 @@ body {
     border: 1px none #ccc;
     border-radius: 20px;
     transition: background-color 0.3s ease;
-    color: #333;
+    color: black;
   }
   
   nav ul li a:hover {
-    background-color: #B67AE0;
+    background-color: #09043C;
+    color: white;
   }
   .img1{
     display: block;
@@ -64,7 +81,8 @@ body {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #d0a5f0;
+    background-color: #FBA1D7;
+    color: white;
     box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     padding: 0;
@@ -74,6 +92,7 @@ body {
  
   .links {
     display: flex;
+    margin-left: 30px;
 }
 
 .links a {
@@ -83,7 +102,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 40px;
     transition: background-color 0.3s ease;
-    color: #333;
+    color: white;
     margin-left: 60px;
     margin-bottom: 40px;
     font-family: Arial;
@@ -92,26 +111,28 @@ body {
     text-align: center;
     padding: 10px 5px;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #09043C;
+    font-size: 25px;
 }
 .links a:hover{
-    background-color: #B67AE0;
+    background-color: #FBA1D7;
+    color: black;
 }
 
   h1{
     margin-top: 130px;
-    padding-left: 60px;
-    font-family: Sla;
-    font-size: 24px;
-    
+    padding-left: 80px;
+    font-family: fonte3;
+    font-size: 60px;
   }
   h2{
-    font-size: 20px;
+    font-size: 22px;
     text-align:justify;
     width: 500px;
-    padding-left: 60px;
-    
-   
- 
+    padding-left: 80px;
+    font-family: fonte2;
+    font-style: normal;
+    color: #000000bd;
   }
   
   .dropdown-content li {
@@ -132,7 +153,7 @@ body {
   }
   
   .dropdown-content a:hover {
-    background-color: #B67AE0;
+    background-color: #09043C;
   }
   
   .dropdown:hover .dropdown-content {
