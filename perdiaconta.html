@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>PERFIL</title>
+  <link rel="stylesheet" href="pagInicialMENU.css">
+  <link rel="stylesheet" href="grade.css">
+ 
+</head>
+<body>
+    <nav>
+        <div class="title">Creative Studio</div>
+        <ul>
+          <li><a href="pagInicialMENU.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#">Categorias &#9662;</a>
+            <ul class="dropdown-content">
+              <li><a href="cadastro.html">Cadastrar</a></li>
+              <li><a href="CS (Login).html">Login</a></li>
+              <li><a href="perdiaconta.html">Perfil</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Contato</a></li>
+          <!-- Adicione mais categorias conforme necessário -->
+        </ul>
+      </nav>
+      <br><br>
+    <div class="cabecario">
+      
+        <div class="user-profile">
+            <div class="image-upload-container">
+              <img id="uploaded-image" src="CS(imagens)/_1a553768-93e4-4413-bfa9-6b8d8b1d4392.jpg" alt="Imagem" />
+             
+            </div>
+            <div class="mini-bio">
+                <h2>@Robii</h2>
+                <p>Oioi eu gosto de morango e de desenhar:D
+                    <br>
+                Tenho 19 anos, sou um pacote de bolacha negrito aro?ace
+                <br> eu gosto de Conan Gray e sofrer por livro
+                </p>
+                <br>
+                <button  src="CadastroARTE.html" >INFO</button>
+            </div>
+        </div>
+    </div>
+    <img id="grade" src="CS(imagens)/grid.png" alt="">
+      
+    <br> <br>
+    <hr>
+    <br> 
+
+    <h3 class="dynamic-message"> Compartilhe seu trabalho com o público </h3>
+   <!-- Container para os botões -->
+   <div class="button-container">
+    <!-- Rótulo personalizado para o botão de 'Escolher arquivos' -->
+    <label for="fileInput" class="custom-file-upload">Escolher arquivos</label>
+
+    <!-- Input para upload de arquivos (escondido) -->
+    <input type="file" id="fileInput" accept="image/*" multiple>
+
+    <!-- Botão de confirmação -->
+    <button onclick="confirmImages()">Confirmar Seleção</button>
+  </div>
+  
+  <!-- Container da grade -->
+  <div class="grid-container" id="fileGrid">
+    <!-- Adicionando duas imagens fixas -->
+    <div class="grid-item">
+      <img src="CS(imagens)/_1a553768-93e4-4413-bfa9-6b8d8b1d4392.jpg" alt="Imagem 1">
+    </div>
+    <div class="grid-item">
+      <img src="CS(imagens)/_1a553768-93e4-4413-bfa9-6b8d8b1d4392.jpg" alt="Imagem 2">
+    </div>
+  </div>
+
+  <script>
+    let selectedImages = new Set(); // Utilizando um Set para garantir que cada imagem seja única
+
+    // Função para exibir as imagens na grade após o upload
+    function showImages(event) {
+      const files = event.target.files; // Obter os arquivos do input
+
+      // Iterar sobre os arquivos e criar elementos HTML para exibi-los na grade
+      for (let i = 0; i < files.length; i++) {
+        const file = files[i];
+
+        // Verificar se o arquivo é uma imagem
+        if (file.type.startsWith('image/')) {
+          const reader = new FileReader();
+
+          // Função de callback para quando a imagem for carregada
+          reader.onload = function(event) {
+            // Criar um elemento img para cada imagem e adicionar ao Set de imagens selecionadas
+            const image = document.createElement("img");
+            image.src = event.target.result; // Definir o src da imagem como a URL da imagem carregada
+            selectedImages.add(image);
+          };
+
+          // Ler o arquivo como uma URL de dados
+          reader.readAsDataURL(file);
+        }
+      }
+    }
+
+    // Função para confirmar e exibir as imagens selecionadas na grade
+    function confirmImages() {
+      const grid = document.getElementById("fileGrid");
+      const imagesToAdd = [...selectedImages]; // Converter o Set para um array para iterar
+
+      // Adicionar cada imagem confirmada na grade, se ainda não estiver presente
+      imagesToAdd.forEach((image) => {
+        if (!grid.contains(image)) {
+          const gridItem = document.createElement("div");
+          gridItem.classList.add("grid-item");
+          const clonedImage = image.cloneNode(true);
+          gridItem.appendChild(clonedImage);
+          grid.appendChild(gridItem);
+        }
+      });
+
+      // Limpar as imagens selecionadas após adicionar à grade
+      selectedImages.clear();
+    }
+
+    // Adicionar um listener para o input de arquivo para chamar a função showImages
+    document.getElementById("fileInput").addEventListener("change", showImages);
+  </script>
+</body>
+</html>

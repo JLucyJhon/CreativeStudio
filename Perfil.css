@@ -1,45 +1,8 @@
   
-  nav {
-    display: flex;
-    align-items: center;
-    background-color: none;
-    padding: 10px;
-  }
-  
-  .title {
-    margin-right: auto; /* Empurra o título para a esquerda */
-    font-weight: bold;
-    font-size: 35px;
-    font-family: fonte4;
-    margin-left: 40px;
-  }
- 
-  nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    font-size: 19px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-right: 30px;
-  }
-  
-  nav ul li {
-    margin-right: 10px;
-    position: relative;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    padding: 8px 15px;
-    border: 1px none #ccc;
-    border-radius: 20px;
-    transition: background-color 0.3s ease;
-    color: black;
-  }
-  
-  nav ul li a:hover {
-    background-color: #09043C;
-    color: white;
+  .cabecario{
+   text-align: center;
+   padding-left: 10%;
+
   }
 
   .dropdown-content {
@@ -79,28 +42,25 @@
     display: block;
   }
   
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 650px;
-    margin: 0;
-    background-color: #ffddff;
-  }
   .wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 2fr);
     column-gap: 10px;
-    row-gap: 1em;
+    row-gap: 15px;
+    text-align: center;
     
   }
+  
   img{
-    width: 150px;
+    width: 50%;
+    text-align: justify;
+
   }
 
   #grade{
-    width: 40px;
-    padding-left: 260px;
+    
+    width: 50px;
+    padding-left: 48%;
   }
 
 
@@ -112,9 +72,9 @@ body {
   }
 
   .image-upload-container {
-    width: 150px;
-    height: 150px;
-    border: 2px solid #ccc;
+    width: 250px;
+    height: 250px;
+    border: 2px solid #cccccc81;
     border-radius: 50%;
     overflow: hidden;
     display: inline-block;
@@ -131,19 +91,29 @@ body {
   }
 
   .mini-bio {
-    margin-left: 20px;
+    margin-left: 22px;
 }
 
 h2 {
-    font-size: 20px;
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+  font-size: 22px;
+  text-align:justify;
+  width: 500px;
+  padding-left: 80px;
+  font-family: fonte2;
+  font-style: normal;
+  color: #000000bd;
 }
 
 p {
-    font-size: 16px;
+    
     margin: 10px 0;
+    font-size: 20px;
+    text-align:justify;
+    width: 500px;
+    padding-left: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    color: #000000bd;
    
 }
 hr{
@@ -152,7 +122,21 @@ hr{
 button{
     border-radius: 50px;
     border: none;
-    width: 100px;
-    height: 25px;
-    background-color: #b67ae0;
+    width: 160px;
+    line-height: 60px;
+    background-color: #09043C;
+    font-family: Arial;
+    color: white;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+    margin-right: 6px;
+  
+}
+button:hover{
+  background-color: #FBA1D7;
+  color: black;
+  
+}
+.diminuir{
+  text-align: center;
 }
