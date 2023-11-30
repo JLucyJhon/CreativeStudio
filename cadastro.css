@@ -105,9 +105,6 @@ body {
     display: block;
   }
 
-body{
-    background-color: #ffddff;
-}
 
 .img2{
     height: 700px;
@@ -118,7 +115,6 @@ body{
     height: 700px;
     padding-top: 10%;
 }
-
 
 
 h1{
@@ -153,7 +149,7 @@ label{
 
 #igenero{
     background-color: #8C69BC;
-<<<<<<< HEAD
+
 }
 
 #linha{
