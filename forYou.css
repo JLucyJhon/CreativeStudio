@@ -3,6 +3,11 @@
   src: url('fontes/CinzelDecorative-Regular.ttf');
 }
 
+@font-face {
+  font-family: fonte5;
+  src: url('fontes/PlayfairDisplay-VariableFont_wght.ttf');
+}
+
 body {
     
     background-color: #FFDDFF;
@@ -89,34 +94,47 @@ body {
   }
 
 .perfil{
-    margin-left: 100px;
-    margin-top: 50px;
+  text-align: right;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  margin-right: 5%;
 }
 
 .perfilImg{
     border-radius: 50px;
 }
 
-.usuario{
-    display: inline-block;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.usuario img{
-    border-radius: 50px;
+.div1, .div2 {
+  width: 40%;
+  box-sizing: border-box;
+  float: left;
+  margin-left: 10%;
 }
 
-.arroba{
-    display: inline-block;
+.ajustar {
+  display: flex;
+  align-items: center;
 }
 
-.ajustar{
-    margin-left: 30%;
+.usuario img {
+  border-radius: 50%;
 }
 
-.imgsfyp{
-    text-align: center;
+.arroba {
+  margin-left: 10px;
 }
 
-.imgsfyp img{
-  border-radius: 10px;
+.descricao {
+  font-size: 20px;
 }
+
+.imgsfyp img {
+  width: 75%;
+  border-radius: 20px;
+}
+

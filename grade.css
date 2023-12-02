@@ -90,7 +90,7 @@ hr{
         margin-bottom: 20px; /* Espaço abaixo do container */
       }
       button, input[type="file"] {
-        background-color: purple; /* Cor de fundo roxa */
+        background-color: #26106986; /* Cor de fundo roxa */
         color: white; /* Letras brancas */
         border: none;
         border-radius: 5px; /* Borda arredondada */
@@ -104,8 +104,8 @@ hr{
       }
       .custom-file-upload {
         background-color: transparent; /* Fundo transparente */
-        color: purple; /* Letras roxas */
-        border: 2px solid purple; /* Borda roxa */
+        color: #26106986; /* Letras roxas */
+        border: 2px solid #26106986; /* Borda roxa */
         border-radius: 5px; /* Borda arredondada */
         padding: 10px 20px; /* Espaçamento interno */
         cursor: pointer;
@@ -114,7 +114,7 @@ hr{
       }
       /* Estilização do rótulo quando hover (opcional) */
       .custom-file-upload:hover {
-        background-color: purple;
+        background-color: #26106986;
         color: white;
       }
       #grade{
