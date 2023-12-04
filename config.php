@@ -1,7 +1,7 @@
 <?php
-$dbHost =  'Creative_Studio';
+$dbHost =  'CreativeStudio';
 $dbUse = 'root';
-$bdSenha = 'etemb2022';
+$bdSenha = '';
 $dbName = 'db_cs';
 
 $conexao = new mysqli($dbHost, $dbUse, $bdSenha, $dbName); 
