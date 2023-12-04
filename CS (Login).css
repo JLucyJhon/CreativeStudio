@@ -161,6 +161,7 @@ h1{
     border: none;
     margin-left: 100px;
     color: #ffddff;
+    text-decoration: none;
 }
 
 .botao1:hover{

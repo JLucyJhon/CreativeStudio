@@ -177,10 +177,11 @@ label{
     margin-left: 50%;
     color: #ffddff;
     margin-top: 50px;
+    text-decoration: none;
 }
 
 .botaoAR{
-    text-align: center;
+    text-align: center ;
     font-size: 25px;
     background-color: #26106986;
     height: 50px;
@@ -191,6 +192,7 @@ label{
     margin-left: 100px;
     color: #ffddff;
     margin-top: 50px;
+    text-decoration: none;
 }
 
 
