@@ -29,7 +29,7 @@
 <main class="conteudo">
     <img class="img1" src="CS(imagens)/img.pg.C.png"alt="">
 
-    <form action="" method="post">
+    <form action="Cadastro.php" method="post">
     <br><br>
     <h1>Cadastro do Artista</h1>
 
@@ -45,9 +45,9 @@
         <input class="caixa-resposta" type="text" name="sobrenome" id="isobrenome" required>
         <br><br>
 
-        <label class="legend" for="inome">Data de Nascimento:</label>
+        <label class="legend" for="iNascimento">Data de Nascimento:</label>
         <br>
-        <input class="caixa-resposta" type="date" name="nome" id="inome" required>
+        <input class="caixa-resposta" type="date" name="nascimento" id="iNascimento" required>
         <br><br>
 
         <label class="legend" for="inome">Email</label>
@@ -81,7 +81,7 @@
         <label class="radio" for="iele">Ele/Dele</label>
         <br>
         <label class="radio" for="ioutro">Outro:</label>
-        <input class="caixa-resposta" type="text" name="pronome.outro" id="ioutro">
+        <input class="caixa-resposta" type="text" name="pronome" id="ioutro">
         <br><br>
     </div>
 </main>
@@ -103,55 +103,55 @@
             <br><br>
             <legend class="legend">Tipo de Arte:</legend>
             <br>
-            <input type="checkbox" name="fotografia" id="ifotografia">
+            <input type="checkbox" name="tipoarte" id="ifotografia">
             <label class="radio" for="ifotografia">Fotografia</label>
             <br>
-            <input type="checkbox" name="musica" id="imusica">
+            <input type="checkbox" name="tipoarte" id="imusica">
             <label class="radio" for="imusica">Musica</label>
             <br>
-            <input type="checkbox" name="dança" id="idança">
+            <input type="checkbox" name="tipoarte" id="idança">
             <label class="radio" for="idança">Dança</label>
             <br>
-            <input type="checkbox" name="desenho" id="idesenho">
+            <input type="checkbox" name="tipoarte" id="idesenho">
             <label class="radio" for="idesenho">Desenho</label>
             <br>
-            <label class="radio" for="ioutro2">Outro:</label>
+            <label class="radio" for="tipoarte">Outro:</label>
             <br>
-            <input class="caixa-resposta" type="text" name="arte.outro" id="ioutro2">
+            <input class="caixa-resposta" type="text" name="tipoarte" id="ioutro2">
     </div>
 
     <div class="sla2">
         <br><br>
         <label class="legend">Links:</label>
             <br><br>
-            <label class="radio" for="iurl1">Instagram:</label>
+            <label class="radio" for="iinstagram">Instagram:</label>
             <br>
-            <input class="caixa-resposta" type="url" name="url1" id="iurl1">
+            <input class="caixa-resposta" type="url" name="instagram" id="iinstagram">
             <br><br>
-            <label class="radio" for="iurl2">Facebook:</label>
+            <label class="radio" for="ifacebook">Facebook:</label>
             <br>
-            <input class="caixa-resposta" type="url" name="url2" id="iurl2">
+            <input class="caixa-resposta" type="url" name="facebook" id="ifacebook">
             <br><br>
-            <label class="radio" for="iurl3">Pinterest:</label>
+            <label class="radio" for="ipinterest">Pinterest:</label>
             <br>
-            <input class="caixa-resposta" type="url" name="url3" id="iurl3">
+            <input class="caixa-resposta" type="url" name="pinterest" id="ipinterest">
             <br><br>
-            <label class="radio" for="iurl4">TikTok:</label>
+            <label class="radio" for="itiktok">TikTok:</label>
             <br>
-            <input class="caixa-resposta" type="url" name="url4" id="iurl4">
+            <input class="caixa-resposta" type="url" name="tiktok" id="itiktok">
             <br><br>
-            <label class="radio" for="iurl5">X/Twiter:</label>
+            <label class="radio" for="ix">X/Twiter:</label>
             <br>
-            <input class="caixa-resposta" type="url" name="url5" id="iurl5">
+            <input class="caixa-resposta" type="url" name="x" id="ix">
             <br><br>
-            <label class="radio" for="iurl6">Youtube:</label>
+            <label class="radio" for="iyoutube">Youtube:</label>
             <br>
-            <input class="caixa-resposta" type="url" name="url6" id="iurl6">
+            <input class="caixa-resposta" type="url" name="youtube" id="iyoutube">
             <br><br>
     </div>
 </div>
         <br>
-        <a href="perdiaconta.html" class="botaoAT">Cadastrar</a>
+        <input type="submit" name="submit" value="Cadastrar" class="botaoAT">
         <br><br><br><br><br><br><br><br>
         </form>
 </body>

@@ -1,47 +1,25 @@
 <?php
-include 'conexao.php';
-
-function conexao() {
-    $conexao = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
-    if(mysqli_connect_errno()){
-        die ("Failed to connect to MySQL: " . mysqli_connect_error());
-    } else {
-        return $conexao;
-    }
-}
-
-function verificar_dados($email, $senha){
-    $conexao = conexao();
-
-    $sql = "SELECT * FROM usuario WHERE email = '{$email}' AND senha = '{$senha}'";
-    $resultado = mysqli_query($conexao, $sql);
-    if (mysqli_num_rows($resultado) > 0) {
-        return true;
-    } else {
-        return false;
-    }
-}
-
-if (isset($_POST['email'])) {
-    $email = strip_tags($_POST['email']);
-
-    if (isset($_POST['senha'])) {
-        $senha = strip_tags($_POST['senha']);
-
-        if (!empty($email) && !empty($senha)) {
-            if (verificar_dados($email, $senha)) {
-                echo "Login feito";
-            } else {
-                echo "Dados incorretos!";
-            }
-        } else {
-            echo "Campo(s) em branco!";
-        }
-    } else {
-        echo "Senha não informada";
-    }
+include_once('config.php');
+$email = $_POST['Email'];
+$senha = $_POST['Senha'];
+$resultado = fazer_verifica_cadastro($conexao, $email, $senha);
+if ($resultado) {
+    header('Location: foryou.html');
+    exit();
 } else {
-    echo "Campo e-mail não informado";
+    echo "Usuário ou Senha Inválidos.";
 }
 
-mysqli_close($conexao);
+function fazer_verifica_cadastro($conexao, $email, $senha) {
+$sql = "select * from artista where email='$email' and senha='$senha'" ;
+
+$resultado = mysqli_query($conexao, $sql);
+
+if (mysqli_num_rows($resultado) == 1) {
+return;
+} else {
+return "Os dados não conferem";
+}
+}
+
+?>
